@@ -26,7 +26,12 @@
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
     background: linear-gradient(to right, rgb(0, 192, 64),rgb(18, 148, 1));   
-    color: rgb(29, 5, 238);
+    color: rgb(192, 192, 192);
+    -webkit-text-stroke:  .05px rgb(150, 150, 150);
+    text-shadow:
+    rgb(182, 182, 182) 0px 0px 1em,	
+    rgb(80, 80, 80) 5px 1px 15px,
+     rgb(70, 70, 70) -5px -1px 15px;
   }
   .front, .back {
 border-radius: 5px;
@@ -55,6 +60,7 @@ padding: 15px 5px 20px 5px;
   }
 
 .front .text{
+  padding-top: .7em;
   z-index: 5;
   overflow: hidden;
   position: relative;
@@ -63,7 +69,7 @@ padding: 15px 5px 20px 5px;
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
   transition: .7s cubic-bezier(0.4, 0.2, 0.2, 1);  
-  transform-origin: center center 250px;
+  transform-origin: 55.5% center 230px;
 }
   .back li a{
     text-decoration: none;

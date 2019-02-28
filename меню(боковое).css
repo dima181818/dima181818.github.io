@@ -32,5 +32,7 @@ width: 210px;
     
     }
     .red li a:not(:hover){
-    transition: all .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    transition: box-shadow .5s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    transform .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
     }
