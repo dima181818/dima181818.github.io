@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    .container{
+            /* background-color: blueviolet;     */
+        padding-top: 10px;
+        margin-top: 10px;
+margin-left:250px;  
+margin-right:250px; 
+display: flex;
+    flex-flow: column wrap;
+font-size: 100%;
+}

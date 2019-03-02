@@ -1,7 +1,10 @@
+
+
 #slider { /*положение слайдера*/
     position: relative;
 	text-align: center;
-    top: 10px;
+	top: 12em;
+	left: -12%;
 }
 
 #slider{ /*центровка слайдера*/
@@ -29,7 +32,7 @@ article div{ /*размер изображений слайдера*/
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
+	max-width: 1000px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
@@ -105,56 +108,56 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active{ /*расположение блока с переключателями*/
-	margin: 16% 0 0;
+	margin: 22% 0 0;
 	text-align: center;
 }
 
 #active label:nth-child(1):hover{
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+	background: #dd9701;
+	border-color: #dd9701 !important;
 }
 #active label:nth-child(2):hover{
-	background: #36f107;
-	border-color: #36f107 !important;
+	background: #5402d8;
+	border-color: #5402d8 !important;
     
 }#active label:nth-child(3):hover{
-	background: #f9fd01;
-	border-color: #f9fd01 !important;
+	background: #01fdfd;
+	border-color: #01fdfd !important;
     
 }#active label:nth-child(4):hover{
-	background: rgb(2, 240, 208);
-	border-color: rgb(2, 240, 208) !important;
+	background: #f002bc;
+	border-color: #f002bc !important;
     
 }#active label:nth-child(5):hover{
-	background: #ad00fd;
-	border-color: #ad00fd !important;
+	background: #f10000;
+	border-color: #f10000 !important;
 }
 
 /*цвет активного лейбла при активации чекбокса*/
 #switch1:checked ~ #active label:nth-child(1){
 	animation: mmm 1s linear 1;
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+	background: #dd9701;
+	border-color: #dd9701 !important;
 }
 #switch2:checked ~ #active label:nth-child(2){
-	background: #36f107;
+	background: #5402d8;
 	animation: mmm 1s linear 1;
-	border-color: #36f107 !important;
+	border-color: #5402d8 !important;
 }
 #switch3:checked ~ #active label:nth-child(3){
 		animation: mmm 1s linear 1;
-	background: #f9fd01;
-	border-color: #f9fd01 !important;
+	background: #01fdfd;
+	border-color: #01fdfd !important;
 }
 #switch4:checked ~ #active label:nth-child(4){
 	animation: mmm 1s linear 1;	
-	background: rgb(2, 240, 208);
-	border-color: rgb(2, 240, 208) !important;
+	background: #f002bc;
+	border-color: #f002bc !important;
 }
 #switch5:checked ~ #active label:nth-child(5){	
 	animation: mmm 1s cubic-bezier(0.02,0.96,0.98,0.04) 1;
-	background: #ad00fd;
-	border-color: #ad00fd !important;
+	background: #f10000;
+	border-color: #f10000 !important;
 }
 
 #slides .image{ /*анимация пролистывания изображений*/
