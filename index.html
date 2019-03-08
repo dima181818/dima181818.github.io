@@ -37,6 +37,89 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .mystat{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15em;
+        color: bisque;
+        padding: 25px;
+        display: block;
+        background-color: rgb(85, 85, 85);
+    }
+    #mystat2{
+        -webkit-text-stroke: .9px rgb(150, 150, 150);
+        text-shadow:
+	rgb(219, 219, 219) 0px 0px 1em,	
+	rgb(92, 92, 92) 10px 10px 5px,
+	 rgb(92, 92, 92) -5px -1px 15px;
+        box-shadow: rgb(48, 48, 48) 7px 7px 10px 0px;
+        margin: -75px 0 0 65em;
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 0% 35px;
+        color: bisque;
+        padding: 15px;
+        display: block;
+        background-color: rgb(160, 160, 160);
+    }
+    #one{
+        -webkit-text-stroke: .9px rgb(150, 150, 150);
+        text-shadow:
+	rgb(219, 219, 219) 0px 0px 1em,	
+	rgb(92, 92, 92) 10px 10px 5px,
+	 rgb(92, 92, 92) -5px -1px 15px;
+        box-shadow: rgb(48, 48, 48) 7px 7px 10px 0px;
+        margin: 0 50em 0 0;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 35px 0% ;
+        color: bisque;
+        padding: 15px;
+        display: block;
+        background-color: rgb(160, 160, 160);
+    }
+    #mystat2::after{
+content: "✅";
+    width: 15px;
+	height: 15px;
+    position: absolute;
+    background: rgb(168, 168, 168);
+    margin-left: 5px;
+    margin-top: -5px;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    }
+    #mystat2:hover ~ #mystat2::after,#one:hover ~ #mystat2::after{
+        opacity: 1;
+    }
+    /* ✅ */
+    #switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url(картинки/prev.png) no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url(картинки/next.png) no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
     </style>
 
 </head>
@@ -149,4 +232,14 @@
 </div>
 
 <!-- /слайдер -->
+<div class="mystat">
+    <div id="one">Созданно:Димитрием <br>Дата создания:Доподленно не известно!</div>	
+    <a target="blank" href="https://mystat.itstep.org/en/main/homework/page/index" id="mystat2">MysTaT
+    </a>
 
+
+
+</div>
+    
+
+</body>
