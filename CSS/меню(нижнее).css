@@ -19,7 +19,7 @@
 
 .front{  
     font-size: 145%;
-     font-family: inspiration,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-family: 'inspiration','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      z-index: 2;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);

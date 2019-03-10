@@ -1,11 +1,12 @@
 #slider { /*положение слайдера*/
     position: relative;
 	text-align: center;
-    top: 10px;
+	top: 10px;
+	left: 22em;
 }
 
 #slider{ /*центровка слайдера*/
-	margin: 0 auto;
+	margin: 0;
 }
 
 #slides article{ /*все изображения справа друг от доруга*/
