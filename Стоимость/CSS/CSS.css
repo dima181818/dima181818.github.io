@@ -27,7 +27,7 @@ margin: 0 auto;
 font-size: 30px;
 transition: .2s;
 }
-  .checkbox__text::before {
+  /* .checkbox__text::before {
       z-index: 1;
     content: '';
     position: absolute;
@@ -58,7 +58,7 @@ transition: .2s;
   }
   .checkbox input:checked ~ .checkbox__text::after {
     left: 68px;
-  }
+  } */
   .checkbox input:checked ~ .checkbox__text{
 text-shadow: rgb(172, 169, 166) 3px 3px 15px,
             rgb(117, 117, 117) 7px 7px 5px; 
