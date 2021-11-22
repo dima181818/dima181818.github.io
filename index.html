@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <!-- <link rel="shortcut icon" href="images/icon.png" type="image/png"> -->
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <script type="text/javascript" src="JS.js"></script>
+
+    <title>Document</title>
+    <style>
+        .text{
+            color: aliceblue;
+            font-size: 25px;
+            line-height: 32px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align:justify;
+            margin: auto 0px;
+        }
+        section img{
+            margin: auto;
+        }
+        section span{
+            height: 60%;
+            width: 5px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 2px 1px #ffffff,
+            inset 0px 0px 2px 1px #ffffff,
+            0px 0px 5px 4px #F536AC,
+            /* inset 0px 0px 5px 4px #F536AC, */
+            /* inset 0px 0 1px #F536AC, */
+            0px 0px 30px #F536AC;
+        }
+        footer{
+            color: #f38acb94;
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+        }
+        span{
+            opacity: 0;
+            /* z-index: 10; */
+            transition: all .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+        .text_main{
+            z-index: 5;
+            margin: auto;
+            font-size: 100px;
+            letter-spacing: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #f38acb;
+            /* text-shadow: 0px 0px 30px #f15e5e; */
+            filter: blur(0px);
+        }
+        /* .text_main::before{
+            z-index: -1;
+            position:absolute;
+            content: attr(data-text);
+            color: #eec3de;
+            filter: blur(4px);
+            opacity: .5;
+            text-shadow: 0px 0px 1px #ffffff;
+
+        } 
+        .text_main::after{
+            z-index: -2;
+            top: 0%;
+            left: 0%;
+            position:absolute;
+            content: attr(data-text);
+            color: #ff009d;
+            filter: blur(5px);
+            text-shadow: 0px 0px 1px 1px #ff009d,
+            0px 0px 1px 1px #ffffff,
+            0px 0px 1px #ffffff,
+            0px 0px 1px #ffffff;
+
+        } */
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="main_content">
+     <div class="wrapper">
+        <a href="#1" class="button">One</a>
+        <a href="#2" class="button">Two</a>
+        <a href="#3" class="button">Three</a>
+        <a href="#4" class="button">Four</a>
+        <a href="#5" class="button">Five</a>
+     </div>
+     <div style="height: 100vh; width: 100%; text-align: center; color: aliceblue; display: grid;">
+        <div class="text_main" data-text="NEON SPACE">NEON SPACE</div>
+    </div>
+     <section>
+     <img src="4.png" id="1" alt="" width="100%" srcset="">
+     <span class="spanline"></span>
+     <div class="text" >Отборочный этап проходит в виде заочного тестирования строго в указанное в расписании время.<br>
+          Принять участие в олимпиадном состязании можно в любом населенном пункте и с любого компьютера, имеющего доступ в интернет.<br>
+           Оргкомитет не гарантирует корректное отображение заданий с телефона или с планшета. Для прохождения состязаний используйте компьютер или ноутбук.<br>
+          Рекомендуется использовать Google Chrome. Выполняйте вход в систему заблаговременно (15-20 минут), чтобы не возникло проблем в момент начала состязания!</div>
+    </section>
+    <!-- <hr style="width: 70%; height: 7px; border-radius: 5px; border: 0px; background-color: #f38acb;"> -->
+    <section>
+        <img src="4.png" id="2" alt="" width="100%" srcset="">
+        <span class="spanline"></span>
+        <div class="text" >Отборочный этап проходит в виде заочного тестирования строго в указанное в расписании время.<br>
+             Принять участие в олимпиадном состязании можно в любом населенном пункте и с любого компьютера, имеющего доступ в интернет.<br>
+              Оргкомитет не гарантирует корректное отображение заданий с телефона или с планшета. Для прохождения состязаний используйте компьютер или ноутбук.<br>
+             Рекомендуется использовать Google Chrome. Выполняйте вход в систему заблаговременно (15-20 минут), чтобы не возникло проблем в момент начала состязания!</div>
+    </section>
+    <!-- <hr style="width: 70%; height: 7px; border-radius: 5px; border: 0px; background-color: #f38acb;"> -->
+
+    <section>
+        <img src="4.png" id="3" alt="" width="100%" srcset="">
+        <span class="spanline"></span>
+        <div class="text" >Отборочный этап проходит в виде заочного тестирования строго в указанное в расписании время.<br>
+             Принять участие в олимпиадном состязании можно в любом населенном пункте и с любого компьютера, имеющего доступ в интернет.<br>
+              Оргкомитет не гарантирует корректное отображение заданий с телефона или с планшета. Для прохождения состязаний используйте компьютер или ноутбук.<br>
+             Рекомендуется использовать Google Chrome. Выполняйте вход в систему заблаговременно (15-20 минут), чтобы не возникло проблем в момент начала состязания!</div>
+    </section>
+
+    <section>
+        <img src="4.png" id="4" alt="" width="100%" srcset="">
+        <span class="spanline"></span>
+        <div class="text" >Отборочный этап проходит в виде заочного тестирования строго в указанное в расписании время.<br>
+             Принять участие в олимпиадном состязании можно в любом населенном пункте и с любого компьютера, имеющего доступ в интернет.<br>
+              Оргкомитет не гарантирует корректное отображение заданий с телефона или с планшета. Для прохождения состязаний используйте компьютер или ноутбук.<br>
+             Рекомендуется использовать Google Chrome. Выполняйте вход в систему заблаговременно (15-20 минут), чтобы не возникло проблем в момент начала состязания!</div>
+    </section>
+
+    <section>
+        <img src="4.png" id="5" alt="" width="100%" srcset="">
+        <span class="spanline"></span>
+        <div class="text" >Отборочный этап проходит в виде заочного тестирования строго в указанное в расписании время.<br>
+             Принять участие в олимпиадном состязании можно в любом населенном пункте и с любого компьютера, имеющего доступ в интернет.<br>
+              Оргкомитет не гарантирует корректное отображение заданий с телефона или с планшета. Для прохождения состязаний используйте компьютер или ноутбук.<br>
+             Рекомендуется использовать Google Chrome. Выполняйте вход в систему заблаговременно (15-20 минут), чтобы не возникло проблем в момент начала состязания!</div>
+    </section>
+    <footer>
+        Made by DIMITRIY
+    </footer>
+    </div>
+    <div></div>
+
+</body>
+</html>
