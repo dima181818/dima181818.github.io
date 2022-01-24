@@ -9,6 +9,22 @@ body {
     margin: 0px auto 0 auto;
     background-color: rgb(0, 0, 0);
  }
+
+ body::-webkit-scrollbar {
+  width: 24px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 9.5px solid rgb(0, 0, 0);
+  margin-left: 5px;
+  background-color: #f38acbad;
+  border-radius: 20px;
+}
+
  a:active,
  a:hover,
  a {
